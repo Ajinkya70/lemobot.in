@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lemobot (OPC) Pvt Ltd | Professional Web Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#0a3d62",
+                        "on-primary-fixed-variant": "#1d496f",
+                        "surface-bright": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "outline": "#72777f",
+                        "on-background": "#1b1b1b",
+                        "primary": "#002743",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3e4850",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#42474e",
+                        "surface-variant": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "tertiary": "#1d262d",
+                        "on-secondary-fixed": "#001c3a",
+                        "surface-dim": "#dcd9d9",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d4e3ff",
+                        "on-tertiary-container": "#9ca6af",
+                        "inverse-surface": "#313030",
+                        "on-surface": "#1b1b1b",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed-dim": "#bec8d1",
+                        "secondary": "#005cab",
+                        "background": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary-fixed": "#001d34",
+                        "on-secondary-fixed-variant": "#004786",
+                        "tertiary-container": "#323c44",
+                        "primary-fixed": "#cfe5ff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-secondary-container": "#fefcff",
+                        "secondary-container": "#0075d6",
+                        "surface-tint": "#386188",
+                        "tertiary-fixed": "#dae4ee",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container-high": "#eae7e7",
+                        "outline-variant": "#c2c7cf",
+                        "surface-container": "#f0eded",
+                        "secondary-fixed-dim": "#a5c8ff",
+                        "inverse-primary": "#a2caf7",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#a2caf7",
+                        "on-primary-container": "#80a8d3",
+                        "on-tertiary-fixed": "#131d24"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "1.5rem",
+                        "xxl": "4rem",
+                        "xs": "0.25rem",
+                        "md": "1rem",
+                        "gutter": "1.5rem",
+                        "margin": "2rem",
+                        "sm": "0.5rem",
+                        "xl": "2rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface/90 backdrop-blur-md shadow-lg sticky top-0 full-width z-50">
+<nav class="flex justify-between items-center w-full px-margin py-md z-50 max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md tracking-tight text-primary">
+                Lemobot
+            </div>
+<div class="hidden md:flex gap-xl items-center">
+<a class="text-secondary border-b-2 border-secondary pb-1 font-label-md text-label-md" href="../home_lemobot_opc_pvt_ltd/index.html">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../about_us_lemobot_opc_pvt_ltd/index.html">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../our_services_lemobot_opc_pvt_ltd/index.html">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../portfolio_lemobot_opc_pvt_ltd/index.html">Portfolio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../free_tools_lemobot_opc_pvt_ltd/index.html">Free Tools</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../blog_lemobot_opc_pvt_ltd/index.html">Blog</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Contact</a>
+</div>
+<a class="bg-secondary text-on-secondary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-all active:scale-95 duration-150 shadow-md inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started</a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-xxl pb-xxl px-margin max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+<div class="lg:col-span-7 space-y-lg">
+<h1 class="text-headline-xl font-headline-xl text-primary leading-tight">
+                    Custom .NET Applications & AI Solutions
+                </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    At Lemobot, we first focus on custom .NET applications, backend systems, SaaS panels and business portals, then AI and LLM-powered automation, followed by WordPress websites, Shopify stores, BI dashboards and database architecture for practical, reliable delivery.
+                </p>
+<div class="flex flex-wrap gap-md pt-md">
+<a class="bg-secondary text-on-secondary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-all active:scale-95 duration-150 shadow-md inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started</a>
+<a class="border border-outline-variant text-primary px-xl py-md rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors inline-flex items-center justify-center" href="../portfolio_lemobot_opc_pvt_ltd/index.html">View Portfolio</a>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Corporate workspace" class="w-full h-full object-cover" data-alt="A sophisticated, high-end corporate office environment with clean lines and architectural precision. The image features a bright, airy workspace with sleek wooden tables and modern ergonomic chairs, illuminated by soft natural light streaming through large windows. The overall aesthetic is professional and minimalist, dominated by whites and soft grays with subtle blue accents, conveying a sense of technological authority and calm efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLpVHNPkvm3U3T4-of0QYFBb-0kDbgaOFCu9xyONkOpuNDIxKb9mopAj3RbFIwtqypYZ2769v6aXYI126MNE1GivGsV2XGbZcQhDJIScRb6cZCaOcCdWovpRwLv4tBh0N0qeG7llISc57y7bjHIUmrqufloabJVEwbJ0omK4NHXO9qWwy9y4VB1WbeCZzwE81yAEIFE86tOCJvyXy04rmdIKlITXJM1YC2oR7poD4zsWdM2DZ_Al_f90NM8YXBGfQuQGEmHMJPWhc"/>
+</div>
+</section>
+<!-- Services Preview -->
+<section class="bg-surface-container-low py-xxl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-xl space-y-sm">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Our Expertise</span>
+<h2 class="text-headline-lg font-headline-lg text-primary">Custom .NET, AI and web commerce services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">code</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">Custom .NET Applications</h3><p class="text-on-surface-variant font-body-md text-body-md">Business portals, SaaS panels, admin systems, APIs, reporting tools and workflow applications built with clean architecture.</p></div>
+<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">smart_toy</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">AI, LLM & Automation</h3><p class="text-on-surface-variant font-body-md text-body-md">LLM chatbots, internal assistants, WhatsApp flows, workflow automation, ML solutions and AI integrations.</p></div>
+<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">shopping_cart</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">WordPress & Shopify</h3><p class="text-on-surface-variant font-body-md text-body-md">Corporate websites, SEO-ready service pages, WooCommerce, Shopify stores, maintenance and performance care.</p></div>
+</div><div class="text-center mt-xl"><a class="bg-secondary text-on-secondary px-xl py-md rounded-lg font-label-md text-label-md hover:translate-y-[-2px] transition-transform shadow-lg inline-flex" href="../our_services_lemobot_opc_pvt_ltd/index.html">View all services</a></div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-xxl px-margin max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xxl items-center">
+<div class="space-y-lg">
+<h2 class="text-headline-lg font-headline-lg text-primary">Why Partner With Us?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">We combine .NET application engineering with AI expertise and full-stack delivery, so your internal system, chatbot, dashboard, website, or store is useful from day one and maintainable after launch.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-lg">
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary" data-icon="verified">verified</span>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">Expert Engineers</h4>
+<p class="text-body-md text-on-surface-variant">Vetted professionals with years of enterprise experience.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary" data-icon="query_stats">query_stats</span>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">Data Driven</h4>
+<p class="text-body-md text-on-surface-variant">Every decision is backed by analytics and user behavior research.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary" data-icon="speed">speed</span>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">High Velocity</h4>
+<p class="text-body-md text-on-surface-variant">Agile methodologies that ensure rapid, reliable delivery cycles.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<span class="material-symbols-outlined text-secondary" data-icon="shield">shield</span>
+<div>
+<h4 class="font-headline-md text-body-lg text-primary">Security First</h4>
+<p class="text-body-md text-on-surface-variant">Architectural precision focused on safety and data integrity.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden bg-primary-container p-lg aspect-square lg:aspect-video flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container to-secondary-container opacity-50"></div>
+<img alt="Team collaborating" class="relative z-10 w-full h-full object-cover rounded-xl shadow-2xl" data-alt="A professional team of diverse software developers and designers working together in a high-tech studio environment. They are gathered around large monitors displaying complex code and elegant user interface designs. The lighting is focused and clean, highlighting their collaboration against a backdrop of glass walls and industrial-modern dÃ©cor. The scene exudes a sense of concentrated innovation and architectural stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRIt52RYkd6fk8HwbH3gcNML7FNxy7LWmQCToE3EAcuOEMF4ZSLxNW6xDopi5Kr_q0guNzNFCxyYbCNU1lH35gIvVsSbQeq-PcSoIxJjoOpmPBIOTYnwz6Z1x9ljhqNio9fBmlQwICyl7meE2LFiFzeucQf9v1XCSiQvkdaL_bl6Blaj-efjaS6sPnZEUPQZ-DakmXg1B-AqBQkXU4rdzWPjM8CVbSs7hozskESF7fiI82R4CMrC71BO6fle9MlNfd3qLYPFbkqK8"/>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="bg-surface-container-low py-xxl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-xl">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Google Reviews</span>
+<h2 class="text-headline-lg font-headline-lg text-primary">Real clients, real delivery feedback</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"Working with Lemobot has been an exceptional experience. Their team is professional, responsive, and highly skilled. They understood my vision perfectly and turned it into a smooth, functional product."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">KP</div><div><p class="font-headline-md text-body-md text-primary">Khalid Patel</p><p class="text-label-md text-on-surface-variant">Google review · 6 months ago</p></div></div></div>
+<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"I had a really good experience working with them. My website was designed exactly how I wanted: clean, professional, and user-friendly. They understood my requirements well and delivered everything on time."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">PK</div><div><p class="font-headline-md text-body-md text-primary">priyanka kamthe</p><p class="text-label-md text-on-surface-variant">Google review · 2 weeks ago</p></div></div></div>
+<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"The team was clear, practical, and quick to respond. The final website felt professional and easy for our customers to use."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">CL</div><div><p class="font-headline-md text-body-md text-primary">Client feedback</p><p class="text-label-md text-on-surface-variant">Website project</p></div></div></div>
+</div>
+</div>
+</section>
+<section class="py-xxl px-margin max-w-7xl mx-auto">
+<div class="text-center mb-xl space-y-sm"><span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Latest from Lemobot</span><h2 class="text-headline-lg font-headline-lg text-primary">Technology notes for stronger SEO</h2><p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">Lemobot will keep publishing useful articles around .NET applications, AI and LLM automation, WordPress, Shopify, dashboards, SEO and business software to stay current with technology and search demand.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<a class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant hover:shadow-lg transition-all duration-300" href="../blog_lemobot_opc_pvt_ltd/index.html"><span class="text-secondary font-label-md text-label-md">May 09, 2026</span><h3 class="text-headline-md font-headline-md text-primary mt-sm mb-sm">When a business should move from spreadsheets to a .NET system</h3><p class="text-on-surface-variant font-body-md">How custom .NET applications reduce manual work across approvals, billing, inventory and reporting.</p></a>
+<a class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant hover:shadow-lg transition-all duration-300" href="../blog_lemobot_opc_pvt_ltd/index.html"><span class="text-secondary font-label-md text-label-md">May 08, 2026</span><h3 class="text-headline-md font-headline-md text-primary mt-sm mb-sm">How Lemobot plans AI chatbots that actually help customers</h3><p class="text-on-surface-variant font-body-md">A business-first view of chatbot workflows, handoff rules and useful automation.</p></a>
+<a class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant hover:shadow-lg transition-all duration-300" href="../blog_lemobot_opc_pvt_ltd/index.html"><span class="text-secondary font-label-md text-label-md">May 07, 2026</span><h3 class="text-headline-md font-headline-md text-primary mt-sm mb-sm">WordPress or Shopify: choosing the right platform</h3><p class="text-on-surface-variant font-body-md">How platform choice depends on content, products, SEO, payment flow and long-term maintenance.</p></a>
+</div></section>
+<!-- CTA Banner -->
+<section class="px-margin py-xxl">
+<div class="max-w-7xl mx-auto rounded-3xl bg-primary py-xl px-xl lg:px-xxl text-center space-y-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-on-primary-fixed-variant to-primary opacity-50"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-headline-xl font-headline-xl text-on-primary">Ready to build a .NET, AI, or web commerce project?</h2>
+<p class="text-body-lg font-body-lg text-on-primary/80">Tell us your workflow, current system, AI idea, or website goal. We will help shape it into a practical build plan.</p>
+<div class="pt-lg flex flex-col sm:flex-row justify-center gap-md">
+<a class="bg-secondary text-on-secondary px-xxl py-md rounded-lg font-label-md text-label-md hover:bg-secondary-container transition-all shadow-xl inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Start Your Project</a>
+<a class="bg-white/10 backdrop-blur-md text-on-primary border border-white/20 px-xxl py-md rounded-lg font-label-md text-label-md hover:bg-white/20 transition-all inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Contact Sales</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container w-full pt-xxl pb-xl px-margin flex flex-col md:flex-row justify-between items-start gap-lg max-w-7xl mx-auto">
+<div class="space-y-md max-w-sm">
+<div class="text-headline-md font-headline-md text-on-primary dark:text-on-tertiary-container">Lemobot</div>
+<p class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80">
+                Building the digital architecture for tomorrow's enterprises today. Precision, scale, and performance in every line of code.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-xxl">
+<div class="space-y-sm">
+<h5 class="text-secondary-fixed font-bold text-label-md uppercase tracking-widest mb-md">Services</h5>
+<ul class="space-y-xs">
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../our_services_lemobot_opc_pvt_ltd/index.html">Custom .NET Applications</a></li>
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../our_services_lemobot_opc_pvt_ltd/index.html">AI & LLM Solutions</a></li>
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../our_services_lemobot_opc_pvt_ltd/index.html">WordPress & Shopify</a></li>
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../portfolio_lemobot_opc_pvt_ltd/index.html">Portfolio</a></li><li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../free_tools_lemobot_opc_pvt_ltd/index.html">Free Tools</a></li>
+</ul>
+</div>
+<div class="space-y-sm">
+<h5 class="text-secondary-fixed font-bold text-label-md uppercase tracking-widest mb-md">Company</h5>
+<ul class="space-y-xs">
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../privacy_policy_lemobot_opc_pvt_ltd/index.html">Privacy Policy</a></li>
+<li><a class="text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200 block text-body-md" href="../terms_of_service_lemobot_opc_pvt_ltd/index.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full md:w-auto mt-xl md:mt-0 border-t border-white/10 md:border-none pt-md md:pt-0">
+<p class="text-label-md font-label-md text-on-primary-container dark:text-on-tertiary-container/60">
+                Â© 2024 Lemobot (OPC) Pvt Ltd. Architectural Precision in IT.
+            </p>
+</div>
+</footer>
+<script>
+(function () {
+  const isInsidePageFolder = /\/(home_lemobot_opc_pvt_ltd|about_us_lemobot_opc_pvt_ltd|our_services_lemobot_opc_pvt_ltd|portfolio_lemobot_opc_pvt_ltd|blog_lemobot_opc_pvt_ltd|contact_us_lemobot_opc_pvt_ltd)\//.test(location.pathname.replace(/\\/g, "/"));
+  const contactUrl = isInsidePageFolder ? "../contact_us_lemobot_opc_pvt_ltd/index.html" : "./contact_us_lemobot_opc_pvt_ltd/index.html";
+  const portfolioUrl = isInsidePageFolder ? "../portfolio_lemobot_opc_pvt_ltd/index.html" : "./portfolio_lemobot_opc_pvt_ltd/index.html";
+  document.querySelectorAll("button").forEach(function (button) {
+    if (button.type === "submit") return;
+    const label = button.textContent.trim().toLowerCase();
+    if (["get started", "start your project", "contact sales", "contact us today", "subscribe"].includes(label)) {
+      button.addEventListener("click", function () { location.href = contactUrl; });
+    }
+    if (label === "view portfolio") {
+      button.addEventListener("click", function () { location.href = portfolioUrl; });
+    }
+  });
+})();
+</script><a aria-label="Chat with Lemobot on WhatsApp" class="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-105 transition-transform flex items-center justify-center" href="https://wa.me/919819413273?text=Hi%20Lemobot%2C%20I%20want%20to%20discuss%20a%20project" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[30px]">chat</span>
+</a>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+

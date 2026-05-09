@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Lemobot (OPC) Pvt Ltd</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#0a3d62",
+                        "on-primary-fixed-variant": "#1d496f",
+                        "surface-bright": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "outline": "#72777f",
+                        "on-background": "#1b1b1b",
+                        "primary": "#002743",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3e4850",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#42474e",
+                        "surface-variant": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "tertiary": "#1d262d",
+                        "on-secondary-fixed": "#001c3a",
+                        "surface-dim": "#dcd9d9",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#d4e3ff",
+                        "on-tertiary-container": "#9ca6af",
+                        "inverse-surface": "#313030",
+                        "on-surface": "#1b1b1b",
+                        "surface-container-low": "#f6f3f2",
+                        "tertiary-fixed-dim": "#bec8d1",
+                        "secondary": "#005cab",
+                        "background": "#fcf9f8",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-primary-fixed": "#001d34",
+                        "on-secondary-fixed-variant": "#004786",
+                        "tertiary-container": "#323c44",
+                        "primary-fixed": "#cfe5ff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-secondary-container": "#fefcff",
+                        "secondary-container": "#0075d6",
+                        "surface-tint": "#386188",
+                        "tertiary-fixed": "#dae4ee",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container-high": "#eae7e7",
+                        "outline-variant": "#c2c7cf",
+                        "surface-container": "#f0eded",
+                        "secondary-fixed-dim": "#a5c8ff",
+                        "inverse-primary": "#a2caf7",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#a2caf7",
+                        "on-primary-container": "#80a8d3",
+                        "on-tertiary-fixed": "#131d24"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "1.5rem",
+                        "xxl": "4rem",
+                        "xs": "0.25rem",
+                        "md": "1rem",
+                        "gutter": "1.5rem",
+                        "margin": "2rem",
+                        "sm": "0.5rem",
+                        "xl": "2rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(230, 240, 250, 1);
+        }
+    </style>
+<style id="responsive-site-fixes">
+@media (max-width: 767px) {
+  html, body { overflow-x: hidden; }
+  .px-margin { padding-left: 1rem !important; padding-right: 1rem !important; }
+  .text-headline-xl { font-size: 2.25rem !important; line-height: 2.7rem !important; letter-spacing: 0 !important; }
+  .text-headline-lg { font-size: 1.9rem !important; line-height: 2.35rem !important; letter-spacing: 0 !important; }
+  .grid-cols-12 { grid-template-columns: minmax(0, 1fr) !important; }
+  [class*="col-span-"] { grid-column: 1 / -1 !important; }
+  .h-[400px], .lg\:h-[500px] { height: 280px !important; }
+  table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
+  textarea, input, select { max-width: 100%; }
+  .item { grid-template-columns: minmax(0, 1fr) !important; }
+  .item > * { grid-column: 1 / -1 !important; }
+}
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 sticky bg-surface/90 dark:bg-surface-container-lowest/90 backdrop-blur-md shadow-lg z-50">
+<nav class="flex justify-between items-center w-full px-margin py-md z-50 max-w-7xl mx-auto">
+<div class="text-headline-md font-headline-md tracking-tight text-primary dark:text-primary-fixed">
+                Lemobot
+            </div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="../home_lemobot_opc_pvt_ltd/index.html">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 font-label-md text-label-md" href="../about_us_lemobot_opc_pvt_ltd/index.html">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="../our_services_lemobot_opc_pvt_ltd/index.html">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="../portfolio_lemobot_opc_pvt_ltd/index.html">Portfolio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../free_tools_lemobot_opc_pvt_ltd/index.html">Free Tools</a><a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="../blog_lemobot_opc_pvt_ltd/index.html">Blog</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Contact</a>
+</div>
+<a class="hidden md:inline-flex bg-secondary text-on-secondary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-all active:scale-95 duration-150 shadow-md inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started</a><button class="mobile-menu-toggle md:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg border border-outline-variant text-primary bg-surface-container-low" type="button" aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</nav>
+<div class="mobile-menu hidden md:hidden border-t border-outline-variant bg-surface/95 backdrop-blur-md px-margin py-md shadow-lg">
+  <div class="flex flex-col gap-sm max-w-7xl mx-auto">
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../home_lemobot_opc_pvt_ltd/index.html">Home</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../about_us_lemobot_opc_pvt_ltd/index.html">About</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../our_services_lemobot_opc_pvt_ltd/index.html">Services</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../portfolio_lemobot_opc_pvt_ltd/index.html">Portfolio</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../free_tools_lemobot_opc_pvt_ltd/index.html">Free Tools</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../blog_lemobot_opc_pvt_ltd/index.html">Blog</a>
+    <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-sm" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Contact</a>
+    <a class="bg-secondary text-on-secondary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-all shadow-md inline-flex items-center justify-center mt-sm" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started</a>
+  </div>
+</div></header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-xxl pb-xxl px-margin max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-7 z-10">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed-variant px-md py-xs rounded-full text-label-md font-label-md mb-md">
+                        Our Story
+                    </span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-lg leading-tight">
+                        Architecting the Digital Future with <span class="text-secondary">Precision</span>.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-2xl">
+                        At Lemobot (OPC) Pvt Ltd, we don't just build websites; we engineer high-performance digital environments. Our approach combines technical authority with innovative design to deliver enterprise-grade solutions.
+                    </p>
+<div class="flex flex-wrap gap-md">
+<div class="flex items-center gap-xs text-primary font-label-md">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+                            Technical Authority
+                        </div>
+<div class="flex items-center gap-xs text-primary font-label-md">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+                            Structural Integrity
+                        </div>
+<div class="flex items-center gap-xs text-primary font-label-md">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+                            Future-Ready Scalability
+                        </div>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+<img alt="Lemobot Office Architecture" class="w-full h-full object-cover aspect-square" data-alt="A wide-angle, high-resolution photograph of a contemporary corporate office interior featuring clean architectural lines, floor-to-ceiling glass windows, and minimalist furniture. The lighting is bright and natural, reflecting a professional and high-tech atmosphere with a palette of crisp whites, soft greys, and deep architectural blues. The scene conveys a sense of stability, precision, and modern IT leadership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpPOQ8rTPHp1gKOExLq4q47QjB90CQz7i7P7-mFLt4DXAc03e0znJFfbo_oKFSVFyF8HI9gxak8Hig7VY7Y6p_2wjDLc8RLSdEy00-P9Pb0_2tFULvZWAiyB-xcoBuR0ydNHYIlly2MECfwaEfntUpd8C0wUe4vR7xw2N20m-nA4Ig3EKfz9mYwHCxPx15EA-qyHJCyD5KLNeKROcigBS0s3qAQ6ajXVpv9ZhOucHYD-LRFHJQmsg1URONSD0jbjLTF5hCiaChu4"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary text-on-secondary p-lg rounded-lg shadow-xl max-w-[200px]">
+<p class="font-headline-md text-headline-md">100+</p>
+<p class="font-label-md text-label-md">Successful Implementations</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Bento Layout -->
+<section class="bg-surface-container-low py-xxl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="md:col-span-2 glass-panel p-xl rounded-xl shadow-sm flex flex-col justify-center">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="target">track_changes</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">Our Mission</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            To empower global enterprises by delivering robust, secure, and architecturally sound digital infrastructures that facilitate seamless growth and technological leadership. We bridge the gap between complex legacy systems and the agile demands of the future.
+                        </p>
+</div>
+<div class="bg-primary p-xl rounded-xl shadow-lg flex flex-col justify-center text-on-primary">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl" data-icon="visibility">visibility</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg mb-md">Our Vision</h2>
+<p class="font-body-md text-body-md text-on-primary-container">
+                            To become the world's most trusted partner in architectural IT services, setting the standard for precision, reliability, and innovative engineering in every pixel we place.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline / Journey Section -->
+<section class="py-xxl px-margin max-w-7xl mx-auto">
+<div class="text-center mb-xxl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Our Journey</h2>
+<div class="w-16 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="relative">
+<!-- Vertical Line (Visible on md) -->
+<div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-outline-variant"></div>
+<div class="space-y-xl md:space-y-xxl">
+<!-- Event 1 -->
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="md:w-1/2 text-right md:pr-xl order-2 md:order-1">
+<h3 class="font-headline-md text-headline-md text-primary">Founding Vision</h3>
+<p class="font-body-md text-on-surface-variant">Lemobot was incorporated with a mission to bring architectural precision to the haphazard world of early-stage web development.</p>
+</div>
+<div class="z-10 bg-secondary w-10 h-10 rounded-full border-4 border-background shadow-md flex items-center justify-center text-on-secondary order-1 md:order-2">
+<span class="text-xs font-bold">2020</span>
+</div>
+<div class="md:w-1/2 order-3"></div>
+</div>
+<!-- Event 2 -->
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="md:w-1/2 order-2 md:order-1"></div>
+<div class="z-10 bg-primary w-10 h-10 rounded-full border-4 border-background shadow-md flex items-center justify-center text-on-primary order-1 md:order-2">
+<span class="text-xs font-bold">2021</span>
+</div>
+<div class="md:w-1/2 md:pl-xl order-3">
+<h3 class="font-headline-md text-headline-md text-primary">Enterprise Pivot</h3>
+<p class="font-body-md text-on-surface-variant">Expansion into heavy-duty backend architectures and high-security fintech integrations for enterprise partners.</p>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="md:w-1/2 text-right md:pr-xl order-2 md:order-1">
+<h3 class="font-headline-md text-headline-md text-primary">Global Outreach</h3>
+<p class="font-body-md text-on-surface-variant">Establishing presence across three continents, delivering localized yet globally scalable IT infrastructure.</p>
+</div>
+<div class="z-10 bg-secondary w-10 h-10 rounded-full border-4 border-background shadow-md flex items-center justify-center text-on-secondary order-1 md:order-2">
+<span class="text-xs font-bold">2023</span>
+</div>
+<div class="md:w-1/2 order-3"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="bg-surface-container py-xxl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-xl">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">The Architects</h2>
+<p class="font-body-md text-on-surface-variant max-w-md">The minds behind Lemobot's technical superiority and design elegance.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- Team Card 1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-accent">
+<div class="h-64 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Arjun Mehta" class="w-full h-full object-cover" data-alt="A professional headshot of a middle-aged male executive with a confident smile, wearing a sharp navy blue business suit. The background is a blurred high-end office environment with soft morning sunlight streaming through windows. The image is captured with a shallow depth of field, emphasizing technical leadership and professional authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClWKo6iMFoFzlVc-ktZR11zh74htSQVT7YmkwzYVzgZi3bdqIXc0UMQzfdlRm9pvaRZVPMV8HFAh9Ca_EgX61Vk1N7K_TT0tNCOjBYFq5LnONAV-PUGHkSIbLUrGW6rVpaDWLy8niUmAuCm08wwQO9EKipv6UDqNFJMgR2jsx1F-Nw8Zbp3cXym77sgWXAmMOosYQK3rlO3smZypdgJaz-PWiqi1f6KXrZpdkh3WkjgrYI7kAGteo2sTlNKFM2gdCSc6I99HHzE20"/>
+</div>
+<div class="p-lg">
+<h4 class="font-headline-md text-headline-md text-primary">Arjun Mehta</h4>
+<p class="text-secondary font-label-md mb-md">Chief Architect &amp; CEO</p>
+<div class="flex gap-sm">
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="hub">hub</span>
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<!-- Team Card 2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-accent">
+<div class="h-64 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Sarah Jenkins" class="w-full h-full object-cover" data-alt="A professional portrait of a woman in her late 30s with an expression of focused intelligence, wearing a professional charcoal grey blazer. She is set against a minimalist architectural background with subtle blue accent lighting. The photography style is modern, sharp, and corporate, highlighting her role as a leader in UI/UX Design Strategy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxVZrWB402-RbLxnftfUZsQzERmi8GtQzgHxrvB2-cfm6tn8pK2wSy0KLQ8H1VX1QNSJpgFkJaVcKaJcfyaYvpoD2C-5JOOt-fVkyPs6iV4qBdwBc4tjWamxmOLXLyrg54JNifCC_isOwCQQQYpZ_rrOdJqluXk6UJTgeNfhyUYQT81TYo05NJOvzuX0AkXF8YDrrNBmzje9tdzwwE0GagnK5Gi2bHYQCMhqD-6hFeIS80OwndrAdodusY2Y99GiIafTALMTCpdfg"/>
+</div>
+<div class="p-lg">
+<h4 class="font-headline-md text-headline-md text-primary">Sarah Jenkins</h4>
+<p class="text-secondary font-label-md mb-md">Head of Design</p>
+<div class="flex gap-sm">
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="palette">palette</span>
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<!-- Team Card 3 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-accent">
+<div class="h-64 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="David Chen" class="w-full h-full object-cover" data-alt="A professional studio portrait of a young male software engineer with a neutral, professional expression. He is wearing a minimalist black turtleneck. The lighting is crisp and cool-toned, with a clean white and soft blue background that suggests a high-tech and sophisticated engineering environment. The mood is one of technical precision and competence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLfOu--jISpIlAQQeeYQ6GED8o2_U0E2g24jKja9f5GjVwVCNQNQja-e4Y-NLJ5ko9B0VTpKklG3_6qflz3WtvS4O9QQHiKZaWR6JZrtC4OD69YWc2B102P-sWLM-bfu0SqFjFNvk8jh_K0EAg4oLT93dGsrK34SMVoY5g32Y7FDcIxcHOB3Q6wRPuQC49TQrSYDTk8UTMCua0oCUItV6q6yknjZ8mGQuNy77ClxKWTPZQMPZ3GMhayNeojntHMBVodkPQye2EIvI"/>
+</div>
+<div class="p-lg">
+<h4 class="font-headline-md text-headline-md text-primary">David Chen</h4>
+<p class="text-secondary font-label-md mb-md">Engineering Lead</p>
+<div class="flex gap-sm">
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="code">code</span>
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<!-- Team Card 4 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-accent">
+<div class="h-64 overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Priya Sharma" class="w-full h-full object-cover" data-alt="A bright and professional corporate headshot of a smiling woman in business attire, positioned in a modern office atrium with architectural steel and glass in the background. The lighting is high-key and optimistic, with a color palette of white, light blue, and silver. The image conveys energy, professional reliability, and clear strategic thinking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA96x4RxZCtMzlQibZ_6BnpQ0G0o5c7GuQ74fNOn3BeJas6XtjG2QdE2a0bSfAn99dk4D9Wv7_sXdehCMhmKeQA7xRmQiXlIL5a6gkUzHIcoPXsC7yceAACqVBE1dzMnUhjN03k8kuDmj7kFpuNj09Woet-EX0QxKUg809LvwOT6TmnFCwv3uPxX33SbFJg-nd2LsM8Wk4aghDguwxsdZBPTs30ppbzG2NgVaqNQ9hwsvcECi0c5rs0qYI-PZO84I-NK2cwWuIFD1c"/>
+</div>
+<div class="p-lg">
+<h4 class="font-headline-md text-headline-md text-primary">Priya Sharma</h4>
+<p class="text-secondary font-label-md mb-md">Strategy Director</p>
+<div class="flex gap-sm">
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="insights">insights</span>
+<span class="bg-surface-container-low px-xs py-xs rounded hover:bg-primary hover:text-white cursor-pointer transition-colors material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xxl px-margin max-w-7xl mx-auto">
+<div class="bg-primary-container rounded-xl p-xxl text-center text-on-primary">
+<h2 class="font-headline-xl text-headline-xl mb-md">Ready for a Technical Upgrade?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed mb-xl max-w-2xl mx-auto opacity-80">
+                    Let's discuss how our architectural approach to IT can stabilize and scale your digital operations.
+                </p>
+<a class="bg-secondary-container text-on-secondary-container px-xxl py-md rounded-lg font-label-md text-label-md hover:brightness-110 transition-all shadow-lg active:scale-95 inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Connect with an Architect</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container text-on-primary dark:text-on-tertiary-container full-width">
+<div class="w-full pt-xxl pb-xl px-margin flex flex-col md:flex-row justify-between items-start gap-lg max-w-7xl mx-auto">
+<div class="flex flex-col gap-md">
+<div class="text-headline-md font-headline-md text-on-primary dark:text-on-tertiary-container">
+                    Lemobot
+                </div>
+<p class="text-body-md font-body-md max-w-xs opacity-80">
+                    Architectural Precision in IT. Delivering scalable, high-performance web solutions for the global enterprise.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-xl md:flex md:gap-xxl">
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-secondary-fixed mb-xs">Services</span>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../our_services_lemobot_opc_pvt_ltd/index.html">Custom .NET Applications</a>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../our_services_lemobot_opc_pvt_ltd/index.html">AI & LLM Solutions</a>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../our_services_lemobot_opc_pvt_ltd/index.html">WordPress & Shopify</a>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../portfolio_lemobot_opc_pvt_ltd/index.html">Portfolio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="../free_tools_lemobot_opc_pvt_ltd/index.html">Free Tools</a></div>
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-secondary-fixed mb-xs">Company</span>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../privacy_policy_lemobot_opc_pvt_ltd/index.html">Privacy Policy</a>
+<a class="text-body-md font-body-md text-on-primary-container dark:text-on-tertiary-container/80 hover:text-on-primary hover:translate-x-1 transition-all duration-200" href="../terms_of_service_lemobot_opc_pvt_ltd/index.html">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin py-lg border-t border-white/10 text-center md:text-left">
+<p class="text-label-md font-label-md opacity-60">Â© 2024 Lemobot (OPC) Pvt Ltd. Architectural Precision in IT.</p>
+</div>
+</footer>
+<script>
+(function () {
+  const isInsidePageFolder = /\/(home_lemobot_opc_pvt_ltd|about_us_lemobot_opc_pvt_ltd|our_services_lemobot_opc_pvt_ltd|portfolio_lemobot_opc_pvt_ltd|blog_lemobot_opc_pvt_ltd|contact_us_lemobot_opc_pvt_ltd)\//.test(location.pathname.replace(/\\/g, "/"));
+  const contactUrl = isInsidePageFolder ? "../contact_us_lemobot_opc_pvt_ltd/index.html" : "./contact_us_lemobot_opc_pvt_ltd/index.html";
+  const portfolioUrl = isInsidePageFolder ? "../portfolio_lemobot_opc_pvt_ltd/index.html" : "./portfolio_lemobot_opc_pvt_ltd/index.html";
+  document.querySelectorAll("button").forEach(function (button) {
+    if (button.type === "submit") return;
+    const label = button.textContent.trim().toLowerCase();
+    if (["get started", "start your project", "contact sales", "contact us today", "subscribe"].includes(label)) {
+      button.addEventListener("click", function () { location.href = contactUrl; });
+    }
+    if (label === "view portfolio") {
+      button.addEventListener("click", function () { location.href = portfolioUrl; });
+    }
+  });
+})();
+</script><a aria-label="Chat with Lemobot on WhatsApp" class="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-[#25D366] text-white shadow-xl hover:scale-105 transition-transform flex items-center justify-center" href="https://wa.me/919819413273?text=Hi%20Lemobot%2C%20I%20want%20to%20discuss%20a%20project" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[30px]">chat</span>
+</a>
+<script id="mobile-menu-script">
+(function initMobileMenu(){
+  document.querySelectorAll('.mobile-menu-toggle').forEach(function(button){
+    var header = button.closest('header');
+    var menu = header ? header.querySelector('.mobile-menu') : null;
+    if(!menu) return;
+    button.addEventListener('click', function(){
+      var isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden', isOpen);
+      button.setAttribute('aria-expanded', String(!isOpen));
+      var icon = button.querySelector('.material-symbols-outlined');
+      if(icon) icon.textContent = isOpen ? 'menu' : 'close';
+    });
+  });
+})();
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
