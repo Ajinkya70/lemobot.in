@@ -8,6 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/lemobot-3d.css"/>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+  }
+}
+</script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -116,7 +124,7 @@
   .text-headline-lg { font-size: 1.9rem !important; line-height: 2.35rem !important; letter-spacing: 0 !important; }
   .grid-cols-12 { grid-template-columns: minmax(0, 1fr) !important; }
   [class*="col-span-"] { grid-column: 1 / -1 !important; }
-  .h-[400px], .lg\:h-[500px] { height: 280px !important; }
+  .h-\[400px\], .lg\:h-\[500px\] { height: 280px !important; }
   table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
   textarea, input, select { max-width: 100%; }
   .item { grid-template-columns: minmax(0, 1fr) !important; }
@@ -160,7 +168,8 @@ header img[alt="Lemobot"] { display: block; }
 </div></header>
 <main>
 <!-- Hero Section -->
-<section class="relative pt-xxl pb-xxl px-margin max-w-7xl mx-auto overflow-hidden">
+<section class="lemobot-hero-3d relative pt-xxl pb-xxl px-margin max-w-7xl mx-auto overflow-hidden">
+<div class="lemobot-3d-canvas-host" data-lemobot-scene="grid" aria-hidden="true"></div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
 <div class="md:col-span-7 z-10">
 <span class="inline-block bg-secondary-fixed text-on-secondary-fixed-variant px-md py-xs rounded-full text-label-md font-label-md mb-md">
@@ -202,7 +211,7 @@ header img[alt="Lemobot"] { display: block; }
 <section class="bg-white py-xxl px-margin">
 <div class="max-w-7xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-<div class="md:col-span-2 glass-panel p-xl rounded-xl shadow-sm flex flex-col justify-center">
+<div class="lemobot-tilt-card md:col-span-2 glass-panel p-xl rounded-xl shadow-sm flex flex-col justify-center">
 <div class="mb-md">
 <span class="material-symbols-outlined text-secondary text-4xl" data-icon="target">track_changes</span>
 </div>
@@ -211,7 +220,7 @@ header img[alt="Lemobot"] { display: block; }
                             To empower global enterprises by delivering robust, secure, and architecturally sound digital infrastructures that facilitate seamless growth and technological leadership. We bridge the gap between complex legacy systems and the agile demands of the future.
                         </p>
 </div>
-<div class="bg-primary p-xl rounded-xl shadow-lg flex flex-col justify-center text-on-primary">
+<div class="lemobot-tilt-card bg-primary p-xl rounded-xl shadow-lg flex flex-col justify-center text-on-primary">
 <div class="mb-md">
 <span class="material-symbols-outlined text-secondary-fixed text-4xl" data-icon="visibility">visibility</span>
 </div>
@@ -310,6 +319,7 @@ header img[alt="Lemobot"] { display: block; }
 <p class="text-label-md font-label-md opacity-60">Â© 2024 Lemobot (OPC) Pvt Ltd. Architectural Precision in IT.</p>
 </div>
 </footer>
+<script type="module" src="../js/lemobot-3d/init.js"></script>
 <script>
 (function () {
   const isInsidePageFolder = /\/(home_lemobot_opc_pvt_ltd|about_us_lemobot_opc_pvt_ltd|our_services_lemobot_opc_pvt_ltd|portfolio_lemobot_opc_pvt_ltd|blog_lemobot_opc_pvt_ltd|contact_us_lemobot_opc_pvt_ltd)\//.test(location.pathname.replace(/\\/g, "/"));

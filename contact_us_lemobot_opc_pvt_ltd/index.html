@@ -7,6 +7,14 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/lemobot-3d.css"/>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+  }
+}
+</script>
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -114,7 +122,7 @@
   .text-headline-lg { font-size: 1.9rem !important; line-height: 2.35rem !important; letter-spacing: 0 !important; }
   .grid-cols-12 { grid-template-columns: minmax(0, 1fr) !important; }
   [class*="col-span-"] { grid-column: 1 / -1 !important; }
-  .h-[400px], .lg\:h-[500px] { height: 280px !important; }
+  [class*="h-[400px]"], [class*="lg:h-[500px]"] { height: 280px !important; }
   table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
   textarea, input, select { max-width: 100%; }
   .item { grid-template-columns: minmax(0, 1fr) !important; }
@@ -161,9 +169,12 @@ header img[alt="Lemobot"] { display: block; }
   </div>
 </div></header>
 <main class="max-w-7xl mx-auto px-margin py-xxl">
-<div class="mb-xxl max-w-2xl">
+<div class="lemobot-hero-3d" style="position:relative;min-height:180px;margin-bottom:0;">
+<div class="lemobot-3d-canvas-host" data-lemobot-scene="globe-connect" aria-hidden="true"></div>
+<div class="mb-xxl max-w-2xl" style="position:relative;z-index:1;">
 <h1 class="text-headline-xl font-headline-xl text-primary mb-md">Contact Us</h1>
 <p class="text-body-lg font-body-lg text-on-surface-variant">We bridge the gap between complex IT challenges and architectural precision. Reach out to discuss your next mission-critical project.</p>
+</div>
 </div>
 <div class="flex flex-col lg:flex-row gap-xxl items-start">
 <!-- Contact Form Column -->
@@ -280,6 +291,7 @@ header img[alt="Lemobot"] { display: block; }
 </div>
 </div>
 </footer>
+<script type="module" src="../js/lemobot-3d/init.js"></script>
 <script>
 document.getElementById("whatsappForm")?.addEventListener("submit", function (event) {
   event.preventDefault();

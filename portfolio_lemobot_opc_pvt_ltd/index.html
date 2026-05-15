@@ -7,6 +7,14 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/lemobot-3d.css"/>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+  }
+}
+</script>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -118,7 +126,7 @@
   .text-headline-lg { font-size: 1.9rem !important; line-height: 2.35rem !important; letter-spacing: 0 !important; }
   .grid-cols-12 { grid-template-columns: minmax(0, 1fr) !important; }
   [class*="col-span-"] { grid-column: 1 / -1 !important; }
-  .h-[400px], .lg\:h-[500px] { height: 280px !important; }
+  [class*="h-[400px]"], [class*="lg:h-[500px]"] { height: 280px !important; }
   table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
   textarea, input, select { max-width: 100%; }
   .item { grid-template-columns: minmax(0, 1fr) !important; }
@@ -162,7 +170,8 @@ header img[alt="Lemobot"] { display: block; }
 </div></header>
 <main class="max-w-7xl mx-auto px-margin">
 <!-- Hero Section -->
-<section class="py-xxl">
+<section class="lemobot-hero-3d py-xxl" style="min-height:220px;">
+<div class="lemobot-3d-canvas-host" data-lemobot-scene="layers" aria-hidden="true"></div>
 <div class="max-w-3xl">
 <h1 class="font-headline-xl text-headline-xl text-primary mb-md">Architectural Precision in IT</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant">
@@ -180,7 +189,7 @@ header img[alt="Lemobot"] { display: block; }
 <!-- Portfolio Grid (12-column Grid) -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-xxl">
 <!-- Project Card 1 -->
-<article class="group relative bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden card-hover transition-all duration-300">
+<article class="lemobot-tilt-card group relative bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden card-hover transition-all duration-300">
 <a href="https://jntataendowment.org/" target="_blank" rel="noopener" class="block">
 <div class="aspect-video overflow-hidden bg-surface-container">
 <img alt="J N Tata Endowment" class="w-full h-full object-contain bg-white p-lg group-hover:scale-105 transition-transform duration-500" onerror="this.outerHTML='<div class=&quot;w-full h-full flex items-center justify-center bg-white text-primary font-headline-md text-xl text-center p-lg&quot;>'+this.alt+'</div>'" src="../project-images/tata-logo.png"/>
@@ -639,6 +648,7 @@ Kids clothing online shop with playful product presentation and e-commerce flow.
 </div>
 </div>
 </footer>
+<script type="module" src="../js/lemobot-3d/init.js"></script>
 <script>
 (function () {
   const isInsidePageFolder = /\/(home_lemobot_opc_pvt_ltd|about_us_lemobot_opc_pvt_ltd|our_services_lemobot_opc_pvt_ltd|portfolio_lemobot_opc_pvt_ltd|blog_lemobot_opc_pvt_ltd|contact_us_lemobot_opc_pvt_ltd)\//.test(location.pathname.replace(/\\/g, "/"));

@@ -8,6 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/lemobot-3d.css"/>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+  }
+}
+</script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -115,7 +123,7 @@
   .text-headline-lg { font-size: 1.9rem !important; line-height: 2.35rem !important; letter-spacing: 0 !important; }
   .grid-cols-12 { grid-template-columns: minmax(0, 1fr) !important; }
   [class*="col-span-"] { grid-column: 1 / -1 !important; }
-  .h-[400px], .lg\:h-[500px] { height: 280px !important; }
+  [class*="h-[400px]"], [class*="lg:h-[500px]"] { height: 280px !important; }
   table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; }
   textarea, input, select { max-width: 100%; }
   .item { grid-template-columns: minmax(0, 1fr) !important; }
@@ -132,7 +140,7 @@ header img[alt="Lemobot"] { display: block; }
 </head>
 <body class="bg-white text-on-background font-body-md">
 <!-- TopAppBar -->
-<header class="bg-white border-b border-outline-variant shadow-sm sticky top-0 full-width z-50">
+<header class="lemobot-header-glass bg-white border-b border-outline-variant shadow-sm sticky top-0 full-width z-50">
 <nav class="flex justify-between items-center w-full px-margin py-md z-50 max-w-7xl mx-auto">
 <a class="inline-flex items-center shrink-0" href="../index.html"><img alt="Lemobot" class="w-[112px] sm:w-[124px] md:w-[136px] lg:w-[148px] h-auto object-contain" src="../Images/logo.png"/></a>
 <div class="hidden md:flex gap-xl items-center">
@@ -159,34 +167,44 @@ header img[alt="Lemobot"] { display: block; }
 </div></header>
 <main>
 <!-- Hero Section -->
-<section class="relative overflow-hidden pt-xxl pb-xxl px-margin max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
-<div class="lg:col-span-7 space-y-lg">
-<h1 class="text-headline-xl font-headline-xl text-primary leading-tight">
-                    Custom .NET Applications & AI Solutions
-                </h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
-                    At Lemobot, we first focus on custom .NET applications, backend systems, SaaS panels and business portals, then AI and LLM-powered automation, followed by WordPress websites, Shopify stores, BI dashboards and database architecture for practical, reliable delivery.
-                </p>
-<div class="flex flex-wrap gap-md pt-md">
-<a class="hidden md:inline-flex bg-secondary text-on-secondary px-xl py-sm rounded-lg font-label-md text-label-md hover:bg-primary transition-all active:scale-95 duration-150 shadow-md inline-flex items-center justify-center" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started</a>
-<a class="border border-outline-variant text-primary px-xl py-md rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors inline-flex items-center justify-center" href="../portfolio_lemobot_opc_pvt_ltd/index.html">View Portfolio</a>
+<section class="lemobot-hero-premium">
+<div class="lemobot-hero-inner">
+<div class="lemobot-hero-copy">
+<span class="lemobot-eyebrow"><span class="lemobot-eyebrow-dot" aria-hidden="true"></span> Enterprise software &amp; AI delivery</span>
+<h1 class="lemobot-hero-title font-headline-xl">
+<span class="lemobot-gradient-text">Custom .NET</span><br/>Applications &amp; AI Solutions
+</h1>
+<p class="lemobot-hero-lead font-body-lg">
+We build business portals, SaaS panels, LLM automation, and commerce platforms — engineered for reliability from day one.
+</p>
+<div class="lemobot-hero-actions">
+<a class="lemobot-btn-primary" href="../contact_us_lemobot_opc_pvt_ltd/index.html">Get Started <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+<a class="lemobot-btn-ghost" href="../portfolio_lemobot_opc_pvt_ltd/index.html">View Portfolio</a>
+</div>
+<div class="lemobot-hero-stats">
+<div class="lemobot-stat"><strong>100+</strong><span>Projects delivered</span></div>
+<div class="lemobot-stat"><strong>.NET</strong><span>Core expertise</span></div>
+<div class="lemobot-stat"><strong>AI</strong><span>LLM &amp; automation</span></div>
 </div>
 </div>
-<div class="lg:col-span-5 relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
-<img alt="Lemobot custom .NET and AI dashboard interface" class="w-full h-full object-cover" data-alt="Professional SaaS dashboard interface for custom .NET applications, AI automation and business reporting." src="../Images/dashboard1.png"/>
+<div class="lemobot-hero-visual">
+<div class="lemobot-hero-visual-frame">
+<div class="lemobot-3d-canvas-host" data-lemobot-scene="network" aria-hidden="true"></div>
+</div>
+</div>
 </div>
 </section>
 <!-- Services Preview -->
 <section class="bg-white py-xxl px-margin">
 <div class="max-w-7xl mx-auto">
 <div class="text-center mb-xl space-y-sm">
-<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Our Expertise</span>
+<span class="lemobot-section-label">Our Expertise</span>
 <h2 class="text-headline-lg font-headline-lg text-primary">Custom .NET, AI and web commerce services</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">code</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">Custom .NET Applications</h3><p class="text-on-surface-variant font-body-md text-body-md">Business portals, SaaS panels, admin systems, APIs, reporting tools and workflow applications built with clean architecture.</p></div>
-<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">smart_toy</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">AI, LLM & Automation</h3><p class="text-on-surface-variant font-body-md text-body-md">LLM chatbots, internal assistants, WhatsApp flows, workflow automation, ML solutions and AI integrations.</p></div>
-<div class="bg-surface p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-lg transition-all duration-300 group"><div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors"><span class="material-symbols-outlined">shopping_cart</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">WordPress & Shopify</h3><p class="text-on-surface-variant font-body-md text-body-md">Corporate websites, SEO-ready service pages, WooCommerce, Shopify stores, maintenance and performance care.</p></div>
+<div class="lemobot-tilt-card lemobot-service-card group"><div class="lemobot-service-icon"><span class="material-symbols-outlined">code</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">Custom .NET Applications</h3><p class="text-on-surface-variant font-body-md text-body-md">Business portals, SaaS panels, admin systems, APIs, reporting tools and workflow applications built with clean architecture.</p></div>
+<div class="lemobot-tilt-card lemobot-service-card group"><div class="lemobot-service-icon"><span class="material-symbols-outlined">smart_toy</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">AI, LLM & Automation</h3><p class="text-on-surface-variant font-body-md text-body-md">LLM chatbots, internal assistants, WhatsApp flows, workflow automation, ML solutions and AI integrations.</p></div>
+<div class="lemobot-tilt-card lemobot-service-card group"><div class="lemobot-service-icon"><span class="material-symbols-outlined">shopping_cart</span></div><h3 class="text-headline-md font-headline-md text-primary mb-sm">WordPress & Shopify</h3><p class="text-on-surface-variant font-body-md text-body-md">Corporate websites, SEO-ready service pages, WooCommerce, Shopify stores, maintenance and performance care.</p></div>
 </div><div class="text-center mt-xl"><a class="bg-secondary text-on-secondary px-xl py-md rounded-lg font-label-md text-label-md hover:translate-y-[-2px] transition-transform shadow-lg inline-flex" href="../our_services_lemobot_opc_pvt_ltd/index.html">View all services</a></div>
 </div>
 </section>
@@ -241,9 +259,9 @@ header img[alt="Lemobot"] { display: block; }
 <h2 class="text-headline-lg font-headline-lg text-primary">Real clients, real delivery feedback</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
-<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"Working with Lemobot has been an exceptional experience. Their team is professional, responsive, and highly skilled. They understood my vision perfectly and turned it into a smooth, functional product."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">KP</div><div><p class="font-headline-md text-body-md text-primary">Khalid Patel</p><p class="text-label-md text-on-surface-variant">Google review · 6 months ago</p></div></div></div>
-<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"I had a really good experience working with them. My website was designed exactly how I wanted: clean, professional, and user-friendly. They understood my requirements well and delivered everything on time."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">PK</div><div><p class="font-headline-md text-body-md text-primary">priyanka kamthe</p><p class="text-label-md text-on-surface-variant">Google review · 2 weeks ago</p></div></div></div>
-<div class="bg-white p-xl rounded-xl shadow-sm border border-outline-variant"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"The team was clear, practical, and quick to respond. The final website felt professional and easy for our customers to use."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">CL</div><div><p class="font-headline-md text-body-md text-primary">Client feedback</p><p class="text-label-md text-on-surface-variant">Website project</p></div></div></div>
+<div class="lemobot-tilt-card lemobot-testimonial-card"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"Working with Lemobot has been an exceptional experience. Their team is professional, responsive, and highly skilled. They understood my vision perfectly and turned it into a smooth, functional product."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">KP</div><div><p class="font-headline-md text-body-md text-primary">Khalid Patel</p><p class="text-label-md text-on-surface-variant">Google review · 6 months ago</p></div></div></div>
+<div class="lemobot-tilt-card lemobot-testimonial-card"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"I had a really good experience working with them. My website was designed exactly how I wanted: clean, professional, and user-friendly. They understood my requirements well and delivered everything on time."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">PK</div><div><p class="font-headline-md text-body-md text-primary">priyanka kamthe</p><p class="text-label-md text-on-surface-variant">Google review · 2 weeks ago</p></div></div></div>
+<div class="lemobot-tilt-card lemobot-testimonial-card"><div class="flex text-secondary mb-md"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span></div><p class="italic text-on-surface-variant font-body-md mb-lg">"The team was clear, practical, and quick to respond. The final website felt professional and easy for our customers to use."</p><div class="flex items-center gap-md"><div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary font-bold">CL</div><div><p class="font-headline-md text-body-md text-primary">Client feedback</p><p class="text-label-md text-on-surface-variant">Website project</p></div></div></div>
 </div>
 </div>
 </section>
@@ -256,7 +274,7 @@ header img[alt="Lemobot"] { display: block; }
 </div></section>
 <!-- CTA Banner -->
 <section class="px-margin py-xxl">
-<div class="max-w-7xl mx-auto rounded-3xl bg-primary py-xl px-xl lg:px-xxl text-center space-y-lg relative overflow-hidden">
+<div class="lemobot-cta-banner max-w-7xl mx-auto rounded-3xl bg-primary py-xl px-xl lg:px-xxl text-center space-y-lg relative overflow-hidden">
 <div class="absolute inset-0 bg-gradient-to-r from-primary via-on-primary-fixed-variant to-primary opacity-50"></div>
 <div class="relative z-10 max-w-3xl mx-auto">
 <h2 class="text-headline-xl font-headline-xl text-on-primary">Ready to build a .NET, AI, or web commerce project?</h2>
@@ -301,6 +319,7 @@ header img[alt="Lemobot"] { display: block; }
             </p>
 </div>
 </footer>
+<script type="module" src="../js/lemobot-3d/init.js"></script>
 <script>
 (function () {
   const isInsidePageFolder = /\/(home_lemobot_opc_pvt_ltd|about_us_lemobot_opc_pvt_ltd|our_services_lemobot_opc_pvt_ltd|portfolio_lemobot_opc_pvt_ltd|blog_lemobot_opc_pvt_ltd|contact_us_lemobot_opc_pvt_ltd)\//.test(location.pathname.replace(/\\/g, "/"));

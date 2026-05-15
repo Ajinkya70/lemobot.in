@@ -1,0 +1,481 @@
+/* ─── Design tokens ─── */
+:root {
+  --lemobot-navy: #001a2e;
+  --lemobot-navy-mid: #002743;
+  --lemobot-blue: #005cab;
+  --lemobot-blue-bright: #0075d6;
+  --lemobot-sky: #a2caf7;
+  --lemobot-glass: rgba(255, 255, 255, 0.08);
+  --lemobot-glass-border: rgba(255, 255, 255, 0.14);
+  --lemobot-glow: rgba(0, 117, 214, 0.45);
+}
+
+/* ─── Premium header ─── */
+.lemobot-header-glass {
+  background: rgba(0, 26, 46, 0.72) !important;
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.lemobot-header-glass nav a.text-on-surface-variant,
+.lemobot-header-glass .text-on-surface-variant {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.lemobot-header-glass nav a.text-on-surface-variant:hover,
+.lemobot-header-glass .text-on-surface-variant:hover {
+  color: var(--lemobot-sky) !important;
+}
+
+.lemobot-header-glass nav a.text-secondary {
+  color: var(--lemobot-sky) !important;
+  border-color: var(--lemobot-blue-bright) !important;
+}
+
+.lemobot-header-glass .mobile-menu {
+  background: rgba(0, 26, 46, 0.96) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.lemobot-header-glass .mobile-menu a {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.lemobot-header-glass .mobile-menu-toggle {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* ─── Full-bleed premium hero ─── */
+.lemobot-hero-premium {
+  position: relative;
+  min-height: min(92vh, 880px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000d18 0%, var(--lemobot-navy-mid) 42%, #0a3d62 100%);
+  padding: clamp(5rem, 10vw, 7rem) clamp(1rem, 4vw, 2rem) clamp(3rem, 6vw, 5rem);
+}
+
+.lemobot-hero-premium::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 85% 40%, rgba(0, 117, 214, 0.22) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 10% 80%, rgba(162, 202, 247, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.lemobot-hero-premium::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, #ffffff 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.lemobot-hero-inner {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .lemobot-hero-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Hero copy */
+.lemobot-hero-copy {
+  color: #fff;
+}
+
+.lemobot-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lemobot-sky);
+  background: rgba(0, 117, 214, 0.15);
+  border: 1px solid rgba(162, 202, 247, 0.25);
+  margin-bottom: 1.25rem;
+}
+
+.lemobot-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+  animation: lemobot-pulse 2s ease-in-out infinite;
+}
+
+@keyframes lemobot-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+.lemobot-hero-title {
+  font-size: clamp(2.25rem, 5vw, 3.35rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.lemobot-gradient-text {
+  background: linear-gradient(120deg, #ffffff 0%, var(--lemobot-sky) 55%, var(--lemobot-blue-bright) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lemobot-hero-lead {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 34rem;
+  margin-bottom: 2rem;
+}
+
+.lemobot-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.lemobot-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--lemobot-blue-bright) 0%, var(--lemobot-blue) 100%);
+  box-shadow: 0 4px 24px var(--lemobot-glow), 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lemobot-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px var(--lemobot-glow), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.lemobot-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--lemobot-glass);
+  border: 1px solid var(--lemobot-glass-border);
+  backdrop-filter: blur(8px);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.lemobot-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+.lemobot-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+}
+
+.lemobot-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.lemobot-stat span {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.02em;
+}
+
+/* Hero 3D visual panel */
+.lemobot-hero-visual {
+  position: relative;
+  min-height: 320px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .lemobot-hero-visual {
+    min-height: 480px;
+  }
+}
+
+.lemobot-hero-visual-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1;
+  border-radius: 1.25rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(0, 117, 214, 0.2),
+    0 24px 80px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+}
+
+.lemobot-hero-visual-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(162, 202, 247, 0.5), transparent 40%, rgba(0, 117, 214, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.lemobot-hero-visual .lemobot-3d-canvas-host {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 50% 45%, rgba(0, 117, 214, 0.12) 0%, transparent 65%);
+}
+
+.lemobot-hero-visual-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 26, 46, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+}
+
+/* Legacy hero wrapper (other pages) */
+.lemobot-hero-3d {
+  position: relative;
+  isolation: isolate;
+}
+
+.lemobot-hero-3d.lemobot-hero-page {
+  min-height: 280px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(180deg, #f6f9fc 0%, #ffffff 100%);
+}
+
+.lemobot-hero-3d.lemobot-hero-page .lemobot-3d-canvas-host {
+  background: radial-gradient(circle at top right, rgba(212, 227, 255, 0.5) 0%, transparent 60%);
+}
+
+.lemobot-hero-3d > *:not(.lemobot-3d-canvas-host) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Canvas host (generic) */
+.lemobot-3d-canvas-host {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.lemobot-3d-canvas-host canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.lemobot-3d-canvas-host.is-static {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 117, 214, 0.15) 0%, transparent 70%);
+}
+
+/* ─── Premium service cards ─── */
+.lemobot-section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lemobot-blue);
+  margin-bottom: 0.5rem;
+}
+
+.lemobot-service-card {
+  position: relative;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #e5e2e1;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.lemobot-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--lemobot-blue), var(--lemobot-sky));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.lemobot-service-card:hover {
+  border-color: rgba(0, 92, 171, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 39, 67, 0.1);
+}
+
+.lemobot-service-card:hover::before {
+  opacity: 1;
+}
+
+.lemobot-service-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #d4e3ff 0%, #e8f2ff 100%);
+  color: var(--lemobot-navy-mid);
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.lemobot-service-card:hover .lemobot-service-icon {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, var(--lemobot-blue-bright) 0%, var(--lemobot-blue) 100%);
+  color: #fff;
+}
+
+/* Tilt cards */
+.lemobot-tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.lemobot-tilt-card.is-tilting {
+  will-change: transform;
+}
+
+.lemobot-tilt-card.lemobot-service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Testimonial cards */
+.lemobot-testimonial-card {
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #e5e2e1;
+  box-shadow: 0 4px 24px rgba(0, 39, 67, 0.04);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.lemobot-testimonial-card:hover {
+  border-color: rgba(0, 92, 171, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 39, 67, 0.08);
+}
+
+/* CTA banner polish */
+.lemobot-cta-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--lemobot-navy-mid) 0%, #0a3d62 50%, var(--lemobot-blue) 100%) !important;
+}
+
+.lemobot-cta-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(162, 202, 247, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lemobot-eyebrow-dot {
+    animation: none;
+  }
+
+  .lemobot-tilt-card {
+    transition: box-shadow 0.25s ease;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .lemobot-hero-premium {
+    min-height: auto;
+    padding-top: 6rem;
+  }
+
+  .lemobot-hero-visual {
+    order: -1;
+    min-height: 280px;
+  }
+
+  .lemobot-hero-visual-frame {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+  }
+}
